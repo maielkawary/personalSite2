@@ -18,54 +18,63 @@
         <div class="header">
             <div class="top-header">
                 <h4><span>logo</span> site name</h4>
-                <div><h4>menu <i class="bi bi-list"></i></h4></div>
+                <div id="menu"><h4>menu <i class="bi bi-list"></i></h4>
+                <div id="menu-content">
+                    <ul>
+                        <a href="#"><li>Home</li></a><hr>
+                        <a href="./landing/index.html"><li>Landing</li></a><hr>
+                        <a href="./aboutUs/index.html"><li>About us</li></a>
+                    </ul>
+                </div>
+
             </div>
+        </div>
             <div class="main-header">
                 <h1>Hi, my name is Mai</h1>
                 <hr>
                 <div>
                     <h4>mechatronics enginner, frontend developer, <br>take a look at my site.</h4>
-                    <button>Get started<i class="bi bi-arrow-right"></i></button> 
+                    <a href="#root"><button>Get started<i class="bi bi-arrow-right"></i></button> </a>
                 </div>
             </div>
         </div>
-        <div class="grid-container">
-            <a href="#">
+        <div class="grid-container" id="root">
+            <a href="./landing/index.html">
                 <div class="grid-item one">
                     <h2>Aliquam</h2>
                     <hr>
                     <h4>Ipsum dolor sit amet</h4>
                 </div>
             </a>
-            <a href="#">
+            <a href="./landing/index.html">
                 <div class="grid-item two">
                     <h2>Tempus</h2>
                     <hr>
                     <h4>feugiat amet tempus</h4>
                 </div>
             </a>
-            <a href="#">
+            <a href="/landing/index.html">
                 <div class="grid-item three">
                     <h2>magna</h2>
                     <hr>
                     <h4>Lorem etiam nullam</h4>
                 </div>
             </a>
-            <a href="#">
+            <a href="./landing/index.html">
                 <div class="grid-item four">
                     <h2>Ipsum</h2>
                     <hr>
                     <h4>nisl sed aliguam</h4>
                 </div>
             </a>
-            <a href="#">
+            <a href="./landing/index.html">
                 <div class="grid-item five">
                     <h2>Consequat</h2>
                     <hr>
                     <h4>Ipsum dolor sit amet</h4>
                 </div>
             </a>
-            <a href="#">
+            <a href="./landing/index.html">
                 <div class="grid-item six">
                     <h2>etiam</h2>
                     <hr>
@@ -79,7 +88,7 @@
             <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.
             </p>
-            <button>Get started<i class="bi bi-arrow-right"></i></button>
+            <a href="./landing/index.html"><button>Get started<i class="bi bi-arrow-right"></i></button></a>
         </div>
         <div class="footer-content">
             <div class="content">
@@ -117,4 +126,16 @@
     </main>
 	<script src="index.js"></script>
   </body>
+
+    <script>
+        let select = document.getElementById('menu');
+        let showContent = document.getElementById('menu-content');
+
+        select.onclick = function(){
+            showContent.classList.toggle('open');
+        }
+
+
+    </script>
+
 </html>
