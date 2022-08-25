@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Comfortaa:wght@600&family=Nanum+Gothic&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+    
+  </head>
+  <body style="background-color: #242943;">
+    <main>
+        <div class="top-header">
+            <h4><span>logo</span> site name</h4>
+            <div id="menu"><h4>menu <i class="bi bi-list"></i></h4>
+            <div id="menu-content">
+                <ul>
+                    <a href="../index.html"><li>Home</li></a><hr>
+                    <a href="../landing/index.html"><li>Landing</li></a><hr>
+                    <a href="#"><li>About us</li></a>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="about-us-main">
+        <h2>About Us</h2>
+        <hr>
+        <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
+        </p>
+        <p>
+            Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+        </p>
+    </div>
+    <div class="footer-content">
+        <div class="content">
+            <i class="bi bi-envelope-fill"></i>
+            <div>
+                <h3>Email</h3>
+                <p>information@untitled.tld</p>
+            </div>
+        </div>
+        <div class="content">
+            <i class="bi bi-telephone-fill"></i>
+            <div>
+                <h3>Phone</h3>
+                <p>(000) 000-0000 x12387</p>
+            </div>
+        </div>
+        <div class="content">
+            <i class="bi bi-house-fill"></i>
+            <div>
+                <h3>Address</h3>
+                <p>1234 Somewhere Road #5432</p>
+                <p>Nashville, TN 00000</p>
+                <p>United States of America</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <button><i class="bi bi-twitter"></i></button>
+        <button><i class="bi bi-facebook"></i></button>
+        <button><i class="bi bi-instagram"></i></button>
+        <button><i class="bi bi-github"></i></button>
+        <button><i class="bi bi-linkedin"></i></button>
+        <p><i class="bi bi-c-circle"></i>UntitledDesign| HTML5 UPDemo Images| Unsplash</p>
+    </div>
+    </main>
+	<script src="index.js"></script>
+  </body>
+
+    <script>
+        let select = document.getElementById('menu');
+        let showContent = document.getElementById('menu-content');
+
+        select.onclick = function(){
+            showContent.classList.toggle('open');
+        }
+
+
+    </script>
+
+</html>
